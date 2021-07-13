@@ -1,0 +1,16 @@
+Card Fraud & Claims Use Cases (Manual Steps)	Automation Steps
+As a Claims & Disputes Agent/Analyst User I should be able to:	
+"Access the Case Tab and Create a New Case of the Record Type 'Card Claims_Reg E' or 'Card Claims_Reg E' -> Fill in Required Details for the respective Case Record Types:
+If Record Type = Card Claims_Reg E, set Type = Reg E Fraud Claim, SubType = Counterfeit-Moto Fraud Source Unknown
+If Record Type = Card Claims_Reg Z, set Type = Reg Z Fraud Claim,  SubType = Lost
+Save. We will Call it C1 from now on"	
+"Add Financial Account to the Case:
+If Record Type = Card Claims_Reg E, then add Finacial Account with Type = Check Card
+If Record Type = Card Claims_Reg E, then add Finacial Account with Type = Credit Card"	
+Populate the 'Initial Review By' Field with the name of the Agent (same user as case creator)	
+Change the Case Owner from the Queue to the Claims & Disputes Agent/Analyst User (same user as case creator)	
+Select the Final Review Tab, Set Status = Final Review, Case Reason = Closed – Claim Processed. 	
+As a Claims & Disputes Supervisor User I should be able to:	
+"Access the 'CD Supervisor Review Queue'
+Select and click Open Case C1 from the list of cases on the Queue and access to the 'Approval History' quick links and see both 'Approve' and 'Reject' buttons"	If 'Approve' is selected - Case Status auto updates to 'Closed - Resolved'
+Populate the 'Final Review By' Field on the Case	
